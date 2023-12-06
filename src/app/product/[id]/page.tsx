@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 
 async function getData(id: number) {
-  const res = await fetch(`http://localhost:5105/api/products/${id}`, { next: { revalidate: 3600 } });
+  const res = await fetch(`http://127.0.0.1:5105/api/products/${id}`, { next: { revalidate: 3600 } });
 
   if (!res.ok) {
     throw new Error('Failed to fetch data')
