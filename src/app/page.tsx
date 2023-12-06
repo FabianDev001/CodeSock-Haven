@@ -33,8 +33,9 @@ export default async function Home() {
 
         {/* Banner */}
         <div className="bg-cover bg-center h-96 flex items-center justify-center w-full">
-          <h1 className="text-4xl font-bold text-white">CodeSock Haven</h1>
+          <h1 className="text-4xl font-bold text-white">Welcome to CodeSock Haven</h1>
         </div>
+        <p className="text-center">We sell socks with programming decorations. Our socks are perfect for developers, programmers, and anyone who loves coding!</p>
 
         {/* Horizontal Line */}
         <hr className="w-full border-t border-gray-300 my-8" />
@@ -52,11 +53,11 @@ export default async function Home() {
                     height={200}
                     className="rounded-lg"
                   />
-                </div>
-                <h3 className="text-lg font-semibold text-black">{product.name}</h3>
+                </div> 
+                <h3 className="text-lg font-semibold text-black text-block">{product.name}</h3>
                 <p className="text-gray-600">Price: {product.price}</p>
                 {product.smallDescription && (
-                  <p className="text-sm text-gray-400">{product.smallDescription}</p>
+                  <p className="text-sm text-gray-700 text-opacity-95">{product.smallDescription}</p>
                 )}
               </div>
             </Link>
@@ -74,7 +75,7 @@ export default async function Home() {
               placeholder="Enter your email"
               className="border rounded-l px-2 py-1 focus:outline-none text-black"
             />
-            <button className="bg-blue-500 text-white px-4 py-1 rounded-r hover:bg-blue-700 ">
+            <button className="bg-blue-700 text-white px-4 py-1 rounded-r hover:bg-blue-900 ">
               Subscribe
             </button>
           </div>

@@ -20,10 +20,11 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
-                    <a href="/" className="hover:underline">CodeSock Haven</a>
+
+                    <a href="https://nextjs.org/" className="hover:underline">Next.js</a>
                   </li>
                   <li>
-                    <a href="https://nextjs.org/" className="hover:underline">Next.js</a>
+                    <a href="https://tailwindcss.com/" className="hover:underline">Tailwind CSS</a>
                   </li>
                 </ul>
               </div>
@@ -42,10 +43,10 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
-                    <a href="#" className="hover:underline">Privacy Policy</a>
+                    <a href="/legal/policy" className="hover:underline">Privacy Policy</a>
                   </li>
                   <li>
-                    <a href="#" className="hover:underline">Terms &amp; Conditions</a>
+                    <a href="/legal/press" className="hover:underline">Terms &amp; Conditions</a>
                   </li>
                 </ul>
               </div>
@@ -53,7 +54,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           </div>
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <div className="sm:flex sm:items-center sm:justify-between">
-            <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" className="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
+            <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="/" className="hover:underline">CodeSock Haven™</a>. All Rights Reserved.</span>
             <div className="flex mt-4 sm:justify-center sm:mt-0">
               {/* Your social media links */}
             </div>
