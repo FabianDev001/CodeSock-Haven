@@ -2,16 +2,17 @@
 
 import React from 'react';
 import Image from 'next/image';
+import axios from 'axios';
 
 
 async function getData(id: number) {
-  const res = await fetch(`http://127.0.0.1:5105/api/products/${id}`, { next: { revalidate: 3600 } });
+  const res = await axios.get(`/api/products/${id}`);
 
-  if (!res.ok) {
+  if (res.status !== 200) {
     throw new Error('Failed to fetch data')
   }
 
-  const product = await res.json();
+  const product = await res.data;
 
   return product;
 }

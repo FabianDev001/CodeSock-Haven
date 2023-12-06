@@ -1,7 +1,8 @@
+import products from "@/products";
 import Image from "next/image";
 import Link from "next/link";
 
-
+/*
 async function getData() {
   const res = await fetch(`http://127.0.0.1:5105/api/products`, { next: { revalidate: 3600 } });
 
@@ -13,13 +14,13 @@ async function getData() {
 
   return products;
 }
-
+*/
 
 
 export default async function Home() {
 
 
-  const products = await getData();
+  const productsData = products;
 
 
   return (
@@ -42,7 +43,7 @@ export default async function Home() {
 
         {/* Product Grid */}
         <section className="container mx-auto grid grid-cols-3 gap-8">
-          {products.map((product) => (
+          {productsData.map((product) => (
             <Link href={`/product/${product.id}`} key={product.id}>
               <div className="bg-white p-4 rounded flex flex-col items-center text-center">
                 <div className="flex-shrink-0 mb-2">
