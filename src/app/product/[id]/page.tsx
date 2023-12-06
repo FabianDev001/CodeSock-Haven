@@ -59,16 +59,16 @@ export default async function Page({
                 </svg>
               ))
             }
-              <span className="ml-1">20 votes</span>
+              <span className="ml-1">{product.votes} voterrrrrrs</span>
             </div>
           </div>
           <p className="font-bold mt-2">Details:</p>
           <p className="font-light mt-3 to-white">{product.largeDescription}</p>
           <div className="text-lg font-bold mt-4">
-            {product.quantity} Products
+            {product.quantity} Products · Price: {product.price}
             <div className="flex items-center space-x-2 mt-2">
-              <button className="bg-blue-500 text-white px-4 py-2 rounded">Buy Now</button>
-              <button className="bg-gray-700 text-white px-4 py-2 rounded">Add to Cart</button>
+              <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+              <button className="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-900">Add to Cart</button>
             </div>
           </div>
         </div>
