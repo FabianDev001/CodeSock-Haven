@@ -6,7 +6,7 @@ import axios from 'axios';
 
 
 async function getData(id: number) {
-  const res = await axios.get(`/api/products/${id}`);
+  const res = await axios.get(`https://socks-haven.fab-js.de/api/products/${id}`);
 
   if (res.status !== 200) {
     throw new Error('Failed to fetch data')
