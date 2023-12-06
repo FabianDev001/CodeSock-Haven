@@ -59,7 +59,7 @@ export default async function Page({
                 </svg>
               ))
             }
-              <span className="ml-1">{product.votes} voterrrrrrs</span>
+              <span className="ml-1">{product.votes} votes</span>
             </div>
           </div>
           <p className="font-bold mt-2">Details:</p>
