@@ -3,7 +3,7 @@ import Link from "next/link";
 
 
 async function getData() {
-  const res = await fetch(`/api/products`, { next: { revalidate: 3600 } });
+  const res = await fetch(`http://localhost:5105/api/products`, { next: { revalidate: 3600 } });
 
   if (!res.ok) {
     throw new Error('Failed to fetch data')
